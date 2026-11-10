@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai Corner Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Chai Corner</h1>
+  </header>
+
+  <main>
+    
+    <section class="image-section">
+      <img src="images/chai.jpg" alt="Hot Karak Chai" class="featured-img">
+    </section>
+
+    
+    <section class="table-section">
+      <h2>Our Menu</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Price (PKR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Karak Chai</td>
+            <td>Beverages</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Cardamom Chai</td>
+            <td>Beverages</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>Samosa (2 pcs)</td>
+            <td>Snacks</td>
+            <td>150</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Interactivity Section -->
+    <section class="action-section">
+      <button class="order-btn" onclick="handleOrder()">Order Chai</button>
+    </section>
+  </main>
+
+  <!-- JavaScript Functionality -->
+  <script>
+    function handleOrder() {
+      console.log("Order button was clicked for Karak Chai.");
+      window.alert("Your Karak Chai order has been placed successfully!");
+    }
+  </script>
+
+</body>
+</html>
