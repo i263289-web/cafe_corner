@@ -1,0 +1,59 @@
+<!-- 
+  Name: Your Name
+  Roll Number: i25XXXX
+  Section: E
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai Corner - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Chai Corner</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Food & Tea Gallery</h2>
+    <section class="gallery-grid">
+      <div class="card">
+        <img src="images/chai.jpg" alt="Special Karak Chai">
+        <p>Special Karak Chai</p>
+      </div>
+      <div class="card">
+        <img src="images/chai.jpg" alt="Fresh Samosas">
+        <p>Crispy Hot Samosas</p>
+      </div>
+      <div class="card">
+        <img src="images/chai.jpg" alt="Aloo Paratha">
+        <p>Aloo Paratha</p>
+      </div>
+    </section>
+
+    <section class="action-container">
+      <button class="btn-order" onclick="showSpecial()">Today's Special</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Chai Corner. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSpecial() {
+      console.log("Special button clicked on Gallery page.");
+      window.alert("Today's Special: Elaichi Chai with Free Biscuit!");
+    }
+  </script>
+
+</body>
+</html>
