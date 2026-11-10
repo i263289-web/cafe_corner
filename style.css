@@ -1,64 +1,125 @@
+/*
+  Name: Your Name
+  Roll Number: i25XXXX
+  Section: E
+*/
 
+/* Global Body Style */
 body {
-  background-color: #f4f6f7;
+  background-color: #f9f6f0;
   color: #2c3e50;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 20px 15px;
   text-align: center;
 }
 
-
+/* Header Heading */
 header h1 {
   color: #8b0000;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
+/* NAVIGATION MENU STYLING */
+.navbar {
+  background-color: #ffffff;
+  padding: 12px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
-.featured-img {
+.navbar a {
+  color: #8b0000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding: 8px 18px;
+  margin: 0 6px;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Hover and Active Link Highlights */
+.navbar a:hover,
+.navbar a.active {
+  background-color: #8b0000;
+  color: #ffffff;
+}
+
+/* Featured Image */
+.hero-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 25px;
 }
 
-
+/* Table Styling */
 table {
   margin: 0 auto 30px auto;
   border-collapse: collapse;
-  width: 80%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 550px;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 th, td {
-  border: 1px solid #dddddd;
-  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  padding: 12px 16px;
   text-align: center;
 }
 
 th {
   background-color: #8b0000;
-  color: white;
+  color: #ffffff;
 }
 
+/* Gallery Grid */
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
 
-.order-btn {
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.btn-order {
   background-color: #27ae60;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 12px 24px;
+  padding: 12px 28px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.order-btn:hover {
+.btn-order:hover {
   background-color: #219150;
 }

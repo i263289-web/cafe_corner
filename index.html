@@ -1,4 +1,8 @@
-
+<!-- 
+  Name: Your Name
+  Roll Number: i25XXXX
+  Section: E
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,17 +15,23 @@
 
   <header>
     <h1>Welcome to Chai Corner</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    
-    <section class="image-section">
-      <img src="images/chai.jpg" alt="Hot Karak Chai" class="featured-img">
+    <!-- Featured Image -->
+    <section class="image-container">
+      <img src="images/chai.jpg" alt="Karak Chai" class="hero-image">
     </section>
 
-    
-    <section class="table-section">
-      <h2>Our Menu</h2>
+    <!-- Menu Table -->
+    <section class="table-container">
+      <h2>Our Special Menu</h2>
       <table>
         <thead>
           <tr>
@@ -50,15 +60,14 @@
       </table>
     </section>
 
-    <!-- Interactivity Section -->
-    <section class="action-section">
-      <button class="order-btn" onclick="handleOrder()">Order Chai</button>
+    <!-- Interactive Button -->
+    <section class="action-container">
+      <button class="btn-order" onclick="placeOrder()">Order Chai</button>
     </section>
   </main>
 
-  <!-- JavaScript Functionality -->
   <script>
-    function handleOrder() {
+    function placeOrder() {
       console.log("Order button was clicked for Karak Chai.");
       window.alert("Your Karak Chai order has been placed successfully!");
     }
